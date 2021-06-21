@@ -10,7 +10,7 @@
 First, clone the repo via git and install dependencies:
 
 ```bash
-git clone git@github.com:trigdzeen/dzongkhag-typing-tutor.git
+git clone git@github.com:trigdzeen/dzongkha-typing-tutor.git
 your-project-name
 cd your-project-name
 yarn
