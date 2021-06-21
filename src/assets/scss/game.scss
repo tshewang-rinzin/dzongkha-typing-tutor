@@ -1,0 +1,404 @@
+// .game{
+
+//     .game-container{
+
+//         //     position: relative;
+
+//         //     .bubble{
+//         //         /* CSS3 Box Shadow */
+//         //         box-shadow:0 10px 20px rgba(228, 153, 5, 0.2), inset 0px 2px 10px 2px rgba(228, 153, 5, 1);
+//         //         -webkit-box-shadow:0 10px 20px rgba(228, 153, 5, 0.2), inset 0px 2px 10px 2px rgba(228, 153, 5, 1);
+//         //         -moz-box-shadow:0 10px 20px rgba(228, 153, 5, 0.2), inset 0px 2px 10px 2px rgba(228, 153, 5, 1);
+//         //         /* CSS3 Border Radius */
+//         //         border-radius:50%;
+//         //         -webkit-border-radius:50%;
+//         //         -moz-border-radius:50%;
+//         //         /* CSS3 Transition */
+//         //         -webkit-transition: all .5s ease-in-out;
+//         //         -moz-transition: all .5s ease-in-out;
+//         //         -o-transition: all .5s ease-in-out;
+//         //         transition: all .5s ease-in-out;
+//         //         width:60px;
+//         //         height:60px;
+//         //         text-align:center;
+//         //         line-height:60px;
+//         //         animation-duration:10s;
+//         //         animation-timing-function: linear;
+//         //         animation-iteration-count: infinite;
+//         //         animation-delay: 2s;
+//         //     }
+//         // }
+//     }
+// }
+
+// @keyframes drop1 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop2 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop3 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop4 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop5 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop6 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop7 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop8 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop9 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+// @keyframes drop10 {
+//     from{ transform: translateY(0px)}
+//     to{transform: translateY(600px)}
+// }
+
+.game-container{
+    background: #3a0000e0;
+	// color: #333;
+	// font: 100% Lato, Arial, Sans Serif;
+	// height: 450px;
+	// margin: 0;
+	// padding: 0;
+    // overflow-x: hidden;
+	// position:relative;
+	z-index:9999;
+    // background: #000;
+	position: absolute;
+	width:1100px;
+	margin:auto;
+	z-index:3;
+	overflow:hidden;
+}
+.bubble-container{
+    // bottom: 0;
+    // left: 0;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+	// z-index: -1;
+
+	position:relative;
+	z-index:2;
+	height:550px;
+}
+/* KEYFRAMES */
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-bottom: 650px;
+    }
+    100% {
+        margin-bottom: 50px;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-bottom: 650px;
+    }
+    100% {
+        margin-bottom: 50px;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-bottom: 650px;
+    }
+    100% {
+        margin-bottom: 50px;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 40%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 10%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 60%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 50%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 30%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 75%;
+	bottom: -100px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left:20%;
+	bottom: -100px;
+
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 90%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 25%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 80%;
+	bottom: -100px;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+/* OBJECTS */
+
+.bubble {
+    // -webkit-border-radius: 50%;
+	// -moz-border-radius: 50%;
+	// border-radius: 50%;
+
+    // -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	// -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	// box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+    // line-height: 3;
+	position: absolute;
+	font-size:3rem;
+	z-index: 0;
+	text-align:center;
+	width:100px;
+	height:100px;
+	display:none;
+
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+    -webkit-box-shadow: inset 0 0px 30px rgba(255, 255, 255, 0.9);
+	-moz-box-shadow: inset 0 0px 30px rgba(255, 255, 255, 0.9);
+	box-shadow: inset 0 0px 30px rgba(255, 255, 255, 0.9);
+
+	content: "";
+    height: 80px;
+	left: 10px;
+	position: absolute;
+	z-index: 1;
+	width: 80px;
+}
+
+.bubble-character{
+	// margin-left: 88px;
+    color: antiquewhite;
+}
+
+.gameinfo{
+	background: #292727;
+    position: absolute;
+    right: 5px;
+    color: #fff;
+    top: 5px;
+    padding: 10px;
+  font-size: 1rem;
+  font-family:Arial, Helvetica, sans-serif;
+	z-index:8;
+	.score{
+		float:left;
+		margin-right:10px;
+		width:200px;
+	}
+	.countdowntimer{
+		float:left;
+		width:200px;
+	}
+	.life{
+		float:left;
+		text-align:right;
+		margin-right: 10px;
+		width:200px;
+	}
+}
+.startgame{
+
+	position:absolute;
+	top: 0;
+    bottom: 0;
+	padding: 20px;
+	right:0;
+	left:0;
+	text-align: center;
+	z-index:9;
+	.startbox{
+		position:relative;
+		margin-top:200px;
+		margin-bottom:auto;
+    height:200px;
+    font-family:Arial, Helvetica, sans-serif;
+	}
+}
+.gameover{
+	background: #e8e8e8;
+	position:absolute;
+	top: 100px;
+    bottom: auto;
+	height:300px;
+	padding: 20px;
+	right:200px;
+	left:200px;
+    text-align: center;
+	border-radius: 5px;
+	.scorevalue{
+		font-size:3rem;
+		color:green;
+		font-weight:bold;
+	}
+}

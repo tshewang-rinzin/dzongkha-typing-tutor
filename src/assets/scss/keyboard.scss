@@ -1,0 +1,278 @@
+@import '~react-simple-keyboard/build/css/index.css';
+
+.keyboard {
+  /* width: 850px; */
+  background-color: #000;
+  padding: 5px 0;
+}
+
+.keyboard ::selection {
+  background: none;
+}
+
+.keyboard-row {
+  display: flex;
+}
+
+.keyboard-row * {
+  flex: 1;
+}
+
+.keyboard-button {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #ea4444;
+  margin: 3px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+      0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+.keyboard-button.is-lighting {
+  color: #2779bd;
+  box-shadow: 2px 1px 3px 0#2779BD, 2px 1px 3px 2px#2779BD;
+}
+.keyboard-button.is-error {
+  color: #e3342f;
+  box-shadow: 2px 1px 3px 0 #e3342f, 2px 1px 3px 2px #e3342f;
+}
+.space-key {
+  flex: 10;
+}
+
+.shift-key {
+  flex: 3;
+}
+
+.caps-key {
+  flex: 2.75;
+}
+
+.tab-key,
+.backspace,
+.enter-key {
+  flex: 2;
+}
+
+.double-char-key {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-key,
+.backspace,
+.shift-key,
+.caps-key,
+.ctr-key,
+.command-key,
+.enter-key,
+.fn-key,
+.alt-key {
+  font-size: 1rem;
+}
+
+.button-has-icon {
+  display: flex;
+  align-items: center;
+}
+.button-has-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.backspace,
+.enter-key {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.backspace,
+.enter-key svg {
+  padding-top: 10px;
+}
+
+.keyboardContainer{
+    position:relative;
+
+    .enkeyboard{
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 999;
+
+        .hg-button{
+            background:none;
+            box-shadow: none;
+            height: 40px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 5px;
+            background: none;
+            border-bottom: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: none;
+        }
+        .hg-theme-default{
+            background:none
+        }
+        .hg-standardBtn{
+            position:relative;
+            span{
+                position:absolute;
+                color:#555;
+                right:15px;
+
+            }
+        }
+        .hg-button-shift, .hg-button-lock, .hg-button-caps, .hg-button-tab, .hg-button-bksp, .hg-button-enter{
+            visibility:hidden;
+            color:white;
+            z-index:-9999;
+        }
+    }
+    .myTheme{
+        .hg-button.hg-left-pinky {
+            background:#39839e;
+            color: white;
+        }
+        .hg-button.hg-left-pinky.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+
+        .hg-button.hg-left-ring {
+            background:#c6970d;
+            color: white;
+        }
+        .hg-button.hg-left-ring.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+        .hg-button.hg-left-middle{
+            background:#41ad48;
+            color: white;
+        }
+        .hg-button.hg-left-middle.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+        .hg-button.hg-left-index{
+            background:#c15a18;
+            color: white;
+        }
+        .hg-button.hg-left-index.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+
+
+        .hg-button.hg-right-pinky {
+            background:#39839e;
+            color: white;
+        }
+        .hg-button.hg-right-pinky.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+
+        .hg-button.hg-right-ring {
+            background:#c6970d;
+            color: white;
+        }
+        .hg-button.hg-right-ring.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+        .hg-button.hg-right-middle{
+            background:#41ad48;
+            color: white;
+        }
+        .hg-button.hg-right-middle.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+        .hg-button.hg-right-index{
+            background:#94619a;
+            color: white;
+        }
+        .hg-button.hg-right-index.hg-bordered {
+            border: 3px solid #03846c;
+            color: white;
+        }
+        .hg-text-hide{
+            display:none;
+        }
+    }
+
+    .dzkeyboard{
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        right: 0;
+
+        .hg-standardBtn{
+            position:relative;
+            font-size:1.5rem;
+            span{
+                position: absolute;
+                left:15px;
+            }
+        }
+
+        .hg-thumb{
+            background:#777577eb;
+            span{
+                left: auto;
+                right: auto;
+                font-size: 50px;
+                margin-top: 30px;
+                color:white
+            }
+        }
+        .hg-background{
+            background: crimson !important;
+            color:white !important;
+        }
+    }
+    .dzkeyboard.noenglish{
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        right: 0;
+        .hg-standardBtn{
+            font-size:1.3rem;
+            span{
+                position: relative;
+                left:auto;
+            }
+        }
+        .hg-background{
+            background: crimson !important;
+        }
+    }
+}
+
+.simple-keyboard.hg-layout-default .hg-button.hg-highlight{
+    box-shadow: 0px 0px 40px 5px rgba(255, 255, 0, 0.5);
+    z-index: 1;
+}
+
+.dzkeyboard.noenglish{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    right: 0;
+    z-index:200000;
+    .hg-standardBtn{
+        font-size:1.3rem;
+        span{
+            position: relative;
+            left:auto;
+        }
+    }
+    .hg-background{
+        background: crimson;
+    }
+}
+
+

@@ -1,0 +1,223 @@
+
+.dz{
+  .playground{
+    font-size:4rem;
+    .lessonName{
+      font-size:2rem;
+    }
+    .next-one-character{
+        width:50px;
+        height:50px;
+        border-radius: 55px;
+        display:block;
+        background:red;
+        color:white;
+        text-align: center;
+        margin: auto;
+    }
+
+    .lesson-content-box{
+        margin-top:10px;
+        padding-top:10px;
+        border: 1px solid;
+        height:150px;
+
+        &>.wangdi29{
+          font-size: 4rem;
+        }
+    }
+    .lesson-content{
+        margin-left: 10px;
+        margin-right: 10px;
+        // height: 100px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .Character-current{
+        //  border: 1px solid red;
+        color: white;
+        background-color: #f90000;
+    }
+    .Character{
+        margin-bottom:0px;
+        white-space: pre;
+    }
+
+    .Next-character{
+        color:#000
+    }
+    .Character-out{
+        color:#bdbbb9;
+    }
+    .summary{
+        margin-top:20px;
+        margin-bottom:10px;
+        font-size:2rem;
+        .speedlabel{
+            color:#41ad48;
+        }
+        .speedvalue{
+            color:#41ad48;
+
+        }
+        .errorlabel{
+            color:#c15a18;
+        }
+        .errorvalue{
+            color: #c15a18;
+        }
+        .accuracylabel{
+            color:#c6970d;
+        }
+        .accuracyvalue{
+            color:#c6970d;
+        }
+    }
+    .control-buttons-container{
+        text-align:right;
+        margin-top:10px
+    }
+  }
+
+  .progress-bar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      background-color: #007bff;
+      transition: width 0.6s ease;
+      font-size:1.2rem;
+  }
+  .wangdi29{
+      .Character{
+          font-size:4rem;
+      }
+      .progress-bar{
+          font-size:2rem;
+      }
+  }
+  .ddcuchen{
+      .Character{
+          font-size:1.9rem;
+      }
+      .progress-bar{
+          font-size:1rem;
+      }
+  }
+  .jomolhari{
+      .Character{
+          font-size:1.9rem;
+      }
+      .progress-bar{
+          font-size:1rem;
+      }
+  }
+  .lesson-summary{
+      position:absolute;
+      left:0;
+      right:0;
+      z-index: 999999;
+      font-size:3rem;
+      .lesson-summary-content{
+          height:300px;
+          width:500px;
+          padding-top:30px;
+          margin:auto;
+          position:relative;
+          background: #7caf08;
+          color:#fff;
+          text-align:center;
+          border-radius:10px;
+          box-shadow: "0 0 6px rgb(35 173 255)";
+      }
+  }
+}
+.en{
+    .playground{
+        .next-one-character{
+            width:50px;
+            height:50px;
+            border-radius: 55px;
+            display:block;
+            background:red;
+            color:white;
+            margin: auto;
+            text-align: center;
+        }
+
+        .lesson-content-box{
+            margin-top:10px;
+            padding-top:10px;
+            border: 1px solid;
+            height:150px;
+            font-family: Wangdi29;
+        }
+        .lesson-content{
+            margin-left: 10px;
+            margin-right: 10px;
+            overflow: hidden;
+            height: 100px;
+            text-align: center;
+
+        }
+        .Character-current{
+            //  border: 1px solid red;
+            color: white;
+            background-color: #f90000;
+        }
+        .Character{
+            margin-bottom:0px;
+            white-space: pre;
+            font-size:4rem;
+            font-family:wangdi29;
+        }
+        .Next-character{
+            color:#000
+        }
+        .Character-out{
+            color:#bdbbb9;
+
+        }
+        .summary{
+            font-size:1rem;
+            margin-top:25px;
+            margin-bottom:10px;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+            .speedlabel{
+                font-weight: bold;
+                color:#41ad48;
+            }
+            .speedvalue{
+                color:#41ad48;
+            }
+            .errorlabel{
+                font-weight:bold;
+                color:#c15a18;
+            }
+            .errorvalue{
+                color: #c15a18;
+            }
+            .accuracylabel{
+                font-weight:bold;
+                color:#c6970d;
+            }
+            .accuracyvalue{
+                color:#c6970d;
+            }
+        }
+        .control-buttons-container{
+            text-align:right;
+            margin-top:0px
+        }
+    }
+    .wangdi29{
+        .Character{
+            font-size:4rem;
+        }
+    }
+}
